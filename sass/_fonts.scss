@@ -1,0 +1,73 @@
+
+    
+@font-face {
+    font-family: 'Perfetto' , sans-serif;
+    src: url('../fonts/Perfetto.ttf') format('truetype');
+    
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('Roboto-Light.eot');
+    src: url('Roboto-Light.eot?#iefix') format('embedded-opentype'),
+    url('Roboto-Light.woff') format('woff'),
+    url('Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('Roboto-Medium.eot');
+    src: url('Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+    url('Roboto-Medium.woff') format('woff'),
+    url('Roboto-Mediums.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('Roboto-Bold.eot');
+    src: url('Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+    url('Roboto-Bold.woff') format('woff'),
+    url('Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+    
+
+
+
+
+
+
+@mixin light {
+    font-family: 'Roboto Light' , sans-serif;
+    line-height: 23px;
+    font-weight: 300;
+    
+}
+
+@mixin bold {
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 76px;
+}
+
+@mixin medium {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+    
+
+
+@mixin Perfetto {
+    font-family: 'Perfetto' , sans-serif;
+    font-size: 74px;
+}
+    
