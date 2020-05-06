@@ -1,0 +1,66 @@
+.portfolio {
+    max-width: 100%;
+    height: 900px;
+    background-image: url('../../img/Rectangle\ 6.png');
+    background-size: 100% 900px;
+    .portfolio_wrapper{
+        position: relative;
+        max-width: 100%;
+        height: 850px;
+    }
+}
+
+.container_portfolio{
+    position: absolute;
+    margin: 205px 375px;
+    margin-top: 250px;
+    width: 1170px;
+    height: 690px;
+    display: flex;
+    color: #FFFFFF;
+    .images{
+        margin-top: 80px;
+    }
+
+    
+}
+
+.content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 670px;
+    height: 560px;
+    .portfolio_title{
+        @include bold;
+        width: 350px;
+        height: 50px;
+        font-size: 60px;
+        margin-left: 476px;
+        display: flex;
+        justify-content: space-between;
+        img{
+            height: 100%;
+            align-self: center;
+        }
+
+        
+    }
+    .tort_name {
+        @include medium;
+        font-size: 36px;
+    }
+    .description{
+        @include light;
+        font-size: 25px;
+        margin-top: 40px;
+    }
+}
+
+.selection{
+    width: 250;
+    height: 30px;
+    display: flex;
+    
+}
+
