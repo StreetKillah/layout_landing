@@ -121,3 +121,82 @@
     }
 }
 
+@media screen and (min-width: 960px) and (max-width: 1600px){
+    .portfolio{
+     background-position: center center;
+     background-size: cover;
+     background-attachment: fixed;
+    }
+    .container_portfolio{
+        margin: 205px auto;
+    }
+}
+  
+  
+  @media screen and (max-width: 960px){
+    .portfolio{
+          height: 900px;
+          background-image: url('../../img/Rectangle\ 6.png');
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          max-width: 100%;
+    }
+
+    .container_portfolio{
+        margin: 0 0;
+        display:flex;
+        flex-direction: column;
+        max-width: 100%;
+        .images{
+            margin-left: 70px;
+            div:nth-child(2){
+                img{
+                    width: 235px;
+                    height: 200px;
+                }
+            }
+            div:nth-child(1){
+                margin: 90px 80px;
+                img{
+                    width: 89px;
+                    height: 89px;
+                }
+            }
+           
+        }
+    }
+
+    .content{
+        max-width: 100%;
+        margin-bottom: auto;
+        position: relative;
+        .portfolio_title{
+            max-width: 100%;
+            font-size: 30px;
+            margin-left: 0px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .tort_name{
+            width: 250px;
+            font-size: 25px;
+            margin: 20px 30px;
+            
+        }
+        .description{
+            font-size: 20px;
+            max-width: 100%;
+            margin-left: auto;
+        }
+
+        .selection{
+            margin: 50px auto;
+            .dots{
+                min-width: 110px;
+            }
+        }
+    }
+  
+  }

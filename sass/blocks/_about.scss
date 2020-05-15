@@ -1,44 +1,52 @@
 .about {
     max-width: 100%;
-    height: 426px;
+    height: 400px;
     position: relative;
     
 }
 
 .about_wrapper {
     max-width: 100%;
-    height: 426px;
     background-color: #FFFFFF;
     position: absolute;
     .container_about{
-        height: 400px;
+        height: 300px;
         width: 1170px;
         left: 0;
         right: 0;
         display: flex;
         justify-content: space-between;
         }
+
+}
+
+.cookie_about{
+    margin-left: 635px;
+    position: absolute;
+    img{
+        margin-top: -133px;
+    }
 }
 
 .polygon{
-    margin-left: 840px;
+    margin-left: 810px;
     img{
-        margin-top: -127px;
-        width: 800px;
+        margin-top: -119px;
+        width: 750px;
     }
 }
 
 .about_text{
     height: 245px;
     width: 676px;
-    margin: 62px 327px;
+    margin: 62px 345px;
     margin-bottom: 73px;
     position: absolute;
 
     .about_title {
     @include bold;
     width: 336px;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
     font-size: 60px;
     display: flex;
     justify-content: space-between;
@@ -56,5 +64,57 @@
       @include light;
       margin-top: 15px;
       font-size: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 960px){
+    .about{
+       padding-bottom: 100px;
+    }
+    .about_wrapper{
+        margin-bottom: auto;
+    }
+    .container_about{
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .about_text{
+        max-width: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: auto;
+    }
+    
+    .polygon{
+        margin-left: 840px;
+        img{
+            margin-top: -127px;
+            width: 800px;
+        }
+    }
+}
+
+@media screen and (max-width: 256px){
+    .about{
+       padding-bottom: 300px;
+    }
+    .about_wrapper{
+        margin-bottom: auto;
+    }
+    .container_about{
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .about_text{
+        max-width: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: auto;
+    }
+    
+    .polygon{
+    display: none;
     }
 }

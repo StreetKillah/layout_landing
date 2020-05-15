@@ -6,6 +6,20 @@
 @import 'blocks/portfolio';
 @import 'blocks/lenta';
 
-body {
+body{
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
+}
+
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+/****************M A I N****************A D A P T I V E*******/
+.main-outer{
+    padding-left: 20px;
+    padding-right: 20px;
 }

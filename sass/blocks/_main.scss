@@ -1,13 +1,16 @@
 .main{
     max-width: 100%;
     position: relative;
-    height: 650px;
+    margin: 0 auto;
+    height: 800px;
     color: #FFFFFF;
     background-image: url('../../img/Rectangle\ 3.png');
-    background-size: 100% 650px;
-    
+    background-size: 100% 800px;
+
 
 }
+
+
 
 .main_container{
     width: 1170px;
@@ -15,7 +18,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    margin: 161px auto;
+    margin: 251px auto;
     @include light;
     .wrapper{
        height: 400px;
@@ -24,7 +27,7 @@
        margin-left: auto;
        margin-right: auto;
         .title_by{
-        margin-left: 127px;
+        margin-left: 137px;
         width: 420px;
         height: 50px;
         font-size: 40px;
@@ -51,4 +54,49 @@
         }
         }
     }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1600px){
+  .main{
+   background-position: center center;
+   background-size: cover;
+   background-attachment: fixed;
+  }
+}
+
+@media screen and (max-width: 960px){
+  .main{
+        margin: 0 auto;
+        color: #FFFFFF;
+        background-image: url('../../img/Rectangle\ 3.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        max-width: 100%;
+    }
+    .main_container{
+      max-width: 100%;
+      margin-top: auto;
+      @include light;
+    }
+
+    .wrapper{
+      max-width: 100%;
+      margin: 100px auto;
+    }
+
+    .title_by{
+ 
+    }
+    .title{
+      @include bold;
+     
+    }
+    .descr{
+      max-width: 100%;
+   
+      margin: auto 0;
+    }
+
 }
